@@ -4,11 +4,11 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
        res =  defaultdict(list)#mapping charCount to list of anagrams
-       for s in strs:
+       for word in strs:
            count = [0] *26
            for c in s:
-               count[ord(c)-ord("a")] +=1
+               count[ord(c)-ord("a")] +=1  # We are getting the ascii value 
 
-            res[tuple(count)].append(s)
+           res[tuple(count)].append(s)
            
         return res.values()

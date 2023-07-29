@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class ValidAnagram {
+public class L242 {
     public static void main(String[] args) {
         String s = "aacc";
         String t = "ccac";
@@ -27,9 +27,9 @@ public class ValidAnagram {
                 }
             }
             answer = hmap1.equals(hmap2);
-        }
-        else {
+        } else {
             answer = false;
         }
         System.out.println(answer);
-    }}
+    }
+}
